@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+:root{
+    --main-color: #0563bb;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*For navbar*/
+.navbar-nav{
+    margin-left: 40rem;
+}
+.navbar-nav li{
+    margin-right: 45px;
+}
+.navbar-nav li a{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+.navbar-nav li:hover{
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+.navbar-nav li a:hover{
+    color: white;
+}
+.navbar-brand{
+    margin-left: 5rem;
+}
+.nav-container, .navbar-small{
+    display: none;
+}
+/*navbar for smaller screen*/
+@media (max-width: 800px){
+    body{
+        font-family: 'Raleway', sans-serif;
+        background-color: var(--main-color);
+    }
+    .baba-nav, .main2{
+        display: none;
+    }
+    .nav-container, .navbar-small{
+        display: block;
+    }
+    .nav-container{
+        background-color: white;
+        width: 100vw;
+        min-height: 100vh;
+        padding: 50px;
+        transform-origin: top left;
+        transition: transform 0.4s linear;
+    }
+    .nav-container.show-nav{
+        transform: rotate(-20deg);
+    }
+    .circle-container{
+        top: -90px;
+        left: -90px;
+        position: fixed;    
+    }
+    .circle{
+        height: 180px;
+        width: 180px;
+        position: relative;
+        border-radius: 50%;
+        background-color: var(--main-color);
+        transition: transform 0.5s linear;
+    }
+    .circle button{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 100px;
+        border: 0;
+        background: transparent;
+        color: white;
+        font-size: 26px;
+    }
+    .circle button:focus{
+        outline: none;
+    }
+    .circle button#open{
+        left: 60%;
+    }
+    .circle button#close{
+        top: 60%;
+        transform: rotate(90deg);
+        transform-origin: top left;
+    }
+    .nav-container.show-nav + .navbar-small li{
+        transform: translateX(100px);
+        transition-delay: 0.3s;
+    }
+    .nav-container.show-nav  .circle{
+        transform: rotate(-90deg);
+    }
+    .navbar-small{
+        left: 0;
+        bottom: 60px;
+        position: fixed;
+        z-index: 100;
+    }
+    .navbar-small ul{
+        color:  white;
+        list-style-type: none;
+        transform: translateX(-100px);
+        transition: transform 0.4s ease-in;
+    }
+    .navbar-small ul li{
+        text-transform: uppercase;
+        margin: 30px 0;
+        cursor: pointer;
+    }
+    .navbar-small ul li a{
+        text-decoration: none;
+        color:  white;
+    }
+    .navbar-small ul li i{
+        margin-right: 5px;
+        font-size: 20px;    
+    }
+    .navbar-small ul li + li{
+        margin-left: 10px;
+        transform: translateX(-100px);
+    }
+    .navbar-small ul li + li + li{
+        margin-left: 20px;
+        transform: translateX(-150px);
+    }
+    .navbar-small ul li + li + li + li{
+        margin-left: 30px;
+        transform: translateX(-200px);
+    }
+    main{
+        max-width: 80vw;
+        margin: 80px auto;
+    }
+}
+
+/*for jumbotron-section*/
+.jumbotron-heading{
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 54px;
+    word-spacing: 0;
+}
+.jumbotron-subheading{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 36px;
+    word-spacing: 0;
+}
+.jumbotron-image{
+    width: 20vw;
+    margin: 0 40vw;
+    height: auto;
+    max-width: 100%;
+}
+/*on smaller view*/
+@media (max-width: 800px){
+.jumbotron-image{
+    width: 40vw;
+    margin: 0 20vw;
+}
+}

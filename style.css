@@ -13,7 +13,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
-/*For navbar*/
+/*navbar-section*/
 .navbar-nav{
     margin-left: 40rem;
 }
@@ -38,7 +38,7 @@ body{
 .nav-container, .navbar-small{
     display: none;
 }
-/*navbar for smaller screen*/
+/*navbar-section on small screen*/
 @media (max-width: 800px){
     body{
         font-family: 'Raleway', sans-serif;
@@ -146,7 +146,8 @@ body{
     }
 }
 
-/*for jumbotron-section*/
+
+/*jumbotron-section*/
 .jumbotron-heading{
     font-size: 48px;
     font-weight: 800;
@@ -167,7 +168,7 @@ body{
     height: auto;
     max-width: 100%;
 }
-/*on smaller view*/
+/*jumbotron on small screen*/
 @media (max-width: 800px){
 .jumbotron-image{
     width: 40vw;

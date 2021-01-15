@@ -12,6 +12,9 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
 }
+section{
+    margin: 40px 0;
+}
 
 /*navbar-section*/
 .navbar-nav{
@@ -130,15 +133,15 @@ body{
     }
     .navbar-small ul li + li{
         margin-left: 10px;
-        transform: translateX(-100px);
+        transform: translateX(-50px);
     }
     .navbar-small ul li + li + li{
         margin-left: 20px;
-        transform: translateX(-150px);
+        transform: translateX(-100px);
     }
     .navbar-small ul li + li + li + li{
         margin-left: 30px;
-        transform: translateX(-200px);
+        transform: translateX(-150px);
     }
     main{
         max-width: 80vw;
@@ -174,4 +177,100 @@ body{
     width: 40vw;
     margin: 0 20vw;
 }
+}
+
+
+/*about-section*/
+.about-heading{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 39px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.about-heading::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.about-heading::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--main-color);
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.about-text{
+    padding: 10px 80px;
+    margin: 5px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 24px;
+}
+.about-content{
+    padding: 10px 50px;
+}
+.about-content h3{
+    color:  #728394;
+    line-height: 31px;
+    font-weight: 700;
+    text-align: center;
+}
+.about-content p{
+    text-align: center;
+}
+.technologies-icon{
+    list-style: none;
+}
+.technologies-icon li{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.technologies-icon li i{
+    color: var(--main-color);
+    padding-right: 4px;
+    font-size: 25px;
+}
+
+/*Projects-section*/
+.projects-heading{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 39px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.projects-heading::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.projects-heading::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--main-color);
+    bottom: 0;
+    left: calc(50% - 20px);
 }

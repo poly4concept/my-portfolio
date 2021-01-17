@@ -15,6 +15,16 @@ body{
 section{
     margin: 40px 10px;
 }
+.box{
+    transform: translateX(calc(100vw + 60px));
+    transition: transform 0.4s ease;
+}
+.box:nth-of-type(even){
+    transform: translateX(-100vw);
+}
+.box.show{
+    transform: translateX(0);
+}
 
 /*navbar-section*/
 .navbar-nav{

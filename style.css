@@ -19,6 +19,7 @@ section{
     section{
         margin: 40px 0;
     }
+}
 .box{
     transform: translateX(calc(100vw + 60px));
     transition: transform 0.4s ease;

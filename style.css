@@ -15,6 +15,10 @@ body{
 section{
     margin: 40px 20px;
 }
+@media (max-width: 800px){
+    section{
+        margin: 40px 0;
+    }
 .box{
     transform: translateX(calc(100vw + 60px));
     transition: transform 0.4s ease;
@@ -420,7 +424,7 @@ section{
 /*services-section on small screen*/
 @media (max-width: 800px){
     .icon-code{
-        margin-left: 23vw;
+        margin-left: 21vw;
     }
 }
 @media only screen and (device-width: 768px) {

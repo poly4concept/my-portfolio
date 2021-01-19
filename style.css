@@ -13,7 +13,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 section{
-    margin: 40px 10px;
+    margin: 40px 20px;
 }
 .box{
     transform: translateX(calc(100vw + 60px));
@@ -332,5 +332,99 @@ section{
 @media (max-width: 800px){
     .projects-image{
         width: 80vw;
+        padding-left: 0;
     }
 }
+
+
+/*Services-section*/
+.services-heading{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 39px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.services-heading::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.services-heading::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--main-color);
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+#services-container{
+    padding: 80px 10px;
+    box-shadow: 2px 4px 5px rgba(95, 95, 95, 0.15), -2px -4px 5px rgba(95, 95, 95, 0.15);
+    transition:  all ease-in-out 0.2s;
+}
+#services-container:hover{
+    outline: inset 5px rgba(48, 47, 47, 0.363);
+}
+.icon-code{
+    background-color: whitesmoke;
+    border-radius: 35px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    align-self: center;
+    margin-left: 12vw;
+}
+.icon-blue{
+    color: var(--main-color);
+}
+#services-container:hover .icon-blue{
+    background-color:  var(--main-color);
+    color: whitesmoke;
+}
+.icon-orange{
+    color: #ffa76e;
+}
+#services-container:hover .icon-orange{
+    background-color:  #ffa76e;
+    color: whitesmoke;
+}
+.icon-pink{
+    color: #e80368;
+}
+#services-container:hover .icon-pink{
+    background-color:  #e80368;
+    color: whitesmoke;
+}
+.icon-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 5px 0;
+}
+.services-text{
+    padding: 5px 20px;
+    text-align: center;
+}
+
+/*services-section on small screen*/
+@media (max-width: 800px){
+    .icon-code{
+        margin-left: 25vw;
+    }
+}
+@media only screen and (device-width: 768px) {
+    .icon-code{
+        margin-left: 22vw;
+    }
+  }

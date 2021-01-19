@@ -420,7 +420,7 @@ section{
 /*services-section on small screen*/
 @media (max-width: 800px){
     .icon-code{
-        margin-left: 25vw;
+        margin-left: 23vw;
     }
 }
 @media only screen and (device-width: 768px) {

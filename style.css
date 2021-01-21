@@ -64,7 +64,6 @@ section{
         font-family: 'Raleway', sans-serif;
         background-color: var(--main-color);
         margin-left: -5px;
-        margin-right: -5px;
     }
     .baba-nav, .main2{
         display: none;
@@ -560,6 +559,9 @@ button[type="submit"] i{
         padding: 0;
         margin: 0;
     }
+    .services-section{
+        margin: 0 -5px;
+    }
     button[type="submit"]{
         width: 60%;
         padding: 5px 10px;
@@ -617,6 +619,7 @@ footer .social-links a:active{
 /*footer-section on small screen*/
 @media (max-width: 800px){
     footer{
+    width: 100%;
     margin-top: 40px;
     margin-right: 0px;
     margin-left: 0px;

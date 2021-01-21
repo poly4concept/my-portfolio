@@ -17,6 +17,7 @@ body{
 }
 section{
     margin: 40px 20px;
+    z-index: 1;
 }
 @media (max-width: 800px){
     section{
@@ -64,7 +65,6 @@ section{
     body{
         font-family: 'Raleway', sans-serif;
         background-color: var(--main-color);
-        margin-left: -5px;
         overflow-x: hidden;     
     }
     .baba-nav, .main2{

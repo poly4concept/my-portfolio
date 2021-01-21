@@ -311,6 +311,7 @@ section{
     width: 45vw;
     border-radius: 10px;
     padding-left: 5px;
+    z-index: 2;
 }
 #project-box:hover  .projects-image{
     transform: scale(0.98);
@@ -491,6 +492,7 @@ section{
     background-color: #eef7ff;
     color: var(--main-color);
     border-radius: 50%;
+    z-index: 2;
 }
 .icon-head{
     display: inline;

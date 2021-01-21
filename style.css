@@ -13,6 +13,7 @@ body{
     font-family: 'Raleway', sans-serif;
     margin-bottom: -80px;
     margin-left: -5px;
+    overflow-x: hidden;
 }
 section{
     margin: 40px 20px;
@@ -64,6 +65,7 @@ section{
         font-family: 'Raleway', sans-serif;
         background-color: var(--main-color);
         margin-left: -5px;
+        overflow-x: hidden;     
     }
     .baba-nav, .main2{
         display: none;
@@ -94,6 +96,7 @@ section{
         border-radius: 50%;
         background-color: var(--main-color);
         transition: transform 0.5s linear;
+        z-index: 4;
     }
     .circle button{
         cursor: pointer;

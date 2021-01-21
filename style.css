@@ -12,6 +12,7 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
     margin-bottom: -80px;
+    margin-left: -5px;
 }
 section{
     margin: 40px 20px;
@@ -62,6 +63,8 @@ section{
     body{
         font-family: 'Raleway', sans-serif;
         background-color: var(--main-color);
+        margin-left: -5px;
+        margin-right: -5px;
     }
     .baba-nav, .main2{
         display: none;
@@ -261,7 +264,10 @@ section{
 /*about-section on small screen*/
 @media (max-width: 800px){
     .about-text{
-        padding: 4px;
+        padding: 0px;
+    }
+    .about-content{
+        padding: 0;
     }
 }
 

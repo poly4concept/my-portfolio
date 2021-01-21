@@ -18,7 +18,7 @@ section{
 }
 @media (max-width: 800px){
     section{
-        margin: 40px 0;
+        margin: 40px -5px;
     }
 }
 .box{
@@ -552,9 +552,11 @@ button[type="submit"] i{
 @media (max-width: 800px){
     .info{
         padding: 0;
+        margin: 0;
     }
     button[type="submit"]{
-        width: 50%;
+        width: 60%;
+        padding: 5px 10px;
     }
 }
 
@@ -606,12 +608,16 @@ footer .social-links a:active{
     transform: scale(0.98);
 }
 
-/*services-section on small screen*/
+/*footer-section on small screen*/
 @media (max-width: 800px){
     footer{
     margin-top: 40px;
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: -125px;
+    }
+    footer .container{
+        padding: 5px;
+        margin: 0;
     }
 }

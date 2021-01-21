@@ -597,7 +597,13 @@ footer .social-links a{
     text-align: center;
     width: 36px;
     height: 36px;
-    transition: all 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+footer .social-links a:hover{
+    opacity: 0.8;    
+}
+footer .social-links a:active{
+    transform: scale(0.98);
 }
 
 /*services-section on small screen*/

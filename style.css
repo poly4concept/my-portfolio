@@ -12,7 +12,6 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
     margin-bottom: -80px;
-    margin-left: -5px;
     overflow-x: hidden;
 }
 section{
@@ -96,7 +95,7 @@ section{
         border-radius: 50%;
         background-color: var(--main-color);
         transition: transform 0.5s linear;
-        z-index: 4;
+        z-index: 5;
     }
     .circle button{
         cursor: pointer;
@@ -108,6 +107,7 @@ section{
         background: transparent;
         color: white;
         font-size: 26px;
+        z-index: 5;
     }
     .circle button:focus{
         outline: none;
@@ -311,7 +311,7 @@ section{
     width: 45vw;
     border-radius: 10px;
     padding-left: 5px;
-    z-index: 2;
+    z-index: 1;
 }
 #project-box:hover  .projects-image{
     transform: scale(0.98);
@@ -478,6 +478,7 @@ section{
 }
 .info{
     padding: 0 10vw;
+    z-index: 1;
 }
 .info-hover{
     margin-bottom: 20px;
@@ -492,7 +493,6 @@ section{
     background-color: #eef7ff;
     color: var(--main-color);
     border-radius: 50%;
-    z-index: 2;
 }
 .icon-head{
     display: inline;
@@ -507,6 +507,7 @@ section{
     position: relative;
     margin-bottom: 50px;
     margin-top: 30px;
+    z-index: 1;
 }
 .form-item{
     display: block;

@@ -395,7 +395,7 @@ section{
 }
 .icon-code{
     background-color: whitesmoke;
-    border-radius: 35px;
+    border-radius: 50px;
     padding: 20px;
     font-size: 40px;
     text-align: center;
@@ -433,17 +433,6 @@ section{
     text-align: center;
 }
 
-/*services-section on small screen*/
-@media (max-width: 800px){
-    .icon-code{
-        
-    }
-}
-@media only screen and (device-width: 768px) {
-    .icon-code{
-       
-    }
-  }
 
 
   /*Contact-section*/

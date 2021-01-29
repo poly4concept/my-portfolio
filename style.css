@@ -385,6 +385,10 @@ section{
     padding: 80px 10px;
     box-shadow: 2px 4px 5px rgba(95, 95, 95, 0.15), -2px -4px 5px rgba(95, 95, 95, 0.15);
     transition:  all ease-in-out 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #services-container:hover{
     outline: inset 5px rgba(196, 190, 190, 0.185);
@@ -395,8 +399,7 @@ section{
     padding: 20px;
     font-size: 40px;
     text-align: center;
-    align-self: center;
-    margin-left: 12vw;
+    align-self: center;    
 }
 .icon-blue{
     color: var(--main-color);
@@ -433,12 +436,12 @@ section{
 /*services-section on small screen*/
 @media (max-width: 800px){
     .icon-code{
-        margin-left: 21vw;
+        
     }
 }
 @media only screen and (device-width: 768px) {
     .icon-code{
-        margin-left: 22vw;
+       
     }
   }
 

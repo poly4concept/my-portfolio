@@ -17,11 +17,7 @@ body{
 section{
     margin: 40px 20px;
     z-index: 1;
-}
-@media (max-width: 800px){
-    section{
-        margin: 40px -5px;
-    }
+    overflow-y: visible;
 }
 .box{
     transform: translateX(calc(100vw + 60px));
@@ -56,116 +52,41 @@ section{
 .navbar-brand{
     margin-left: 5rem;
 }
-.nav-container, .navbar-small{
+.small-nav{
     display: none;
 }
+
 /*navbar-section on small screen*/
 @media (max-width: 800px){
     body{
         font-family: 'Raleway', sans-serif;
-        background-color: var(--main-color);
-        overflow-x: hidden;     
-    }
-    .baba-nav, .main2{
-        display: none;
-    }
-    .nav-container, .navbar-small{
-        display: block;
-    }
-    .nav-container{
-        background-color: white;
-        width: 100vw;
-        min-height: 100vh;
-        padding: 50px;
-        transform-origin: top left;
-        transition: transform 0.4s linear;
-    }
-    .nav-container.show-nav{
-        transform: rotate(-20deg);
-    }
-    .circle-container{
-        top: -90px;
-        left: -90px;
-        position: fixed;    
-        z-index: 99999;
-    }
-    .circle{
-        height: 180px;
-        width: 180px;
-        position: relative;
-        border-radius: 50%;
-        background-color: var(--main-color);
-        transition: transform 0.5s linear;
-    }
-    .circle button{
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        height: 100px;
-        border: 0;
-        background: transparent;
-        color: white;
-        font-size: 26px;
-    }
-    .circle button:focus{
-        outline: none;
-    }
-    .circle button#open{
-        left: 60%;
-    }
-    .circle button#close{
-        top: 60%;
-        transform: rotate(90deg);
-        transform-origin: top left;
-    }
-    .nav-container.show-nav + .navbar-small li{
-        transform: translateX(100px);
-        transition-delay: 0.3s;
-    }
-    .nav-container.show-nav  .circle{
-        transform: rotate(-90deg);
-    }
-    .navbar-small{
-        left: 0;
-        bottom: 60px;
-        position: fixed;
-        z-index: 100;
-    }
-    .navbar-small ul{
-        color:  white;
-        list-style-type: none;
-        transform: translateX(-100px);
-        transition: transform 0.4s ease-in;
-    }
-    .navbar-small ul li{
-        text-transform: uppercase;
-        margin: 30px 0;
-        cursor: pointer;
-    }
-    .navbar-small ul li a{
-        text-decoration: none;
-        color:  white;
-    }
-    .navbar-small ul li i{
-        margin-right: 5px;
-        font-size: 20px;    
-    }
-    .navbar-small ul li + li{
-        margin-left: 10px;
-        transform: translateX(-50px);
-    }
-    .navbar-small ul li + li + li{
-        margin-left: 20px;
-        transform: translateX(-100px);
-    }
-    .navbar-small ul li + li + li + li{
-        margin-left: 30px;
-        transform: translateX(-150px);
+        overflow: hidden;     
     }
     main{
         max-width: 80vw;
         margin: 80px auto;
+    }
+    .navbar-nav li:hover{
+        background-color: var(--main-color);
+        border-radius: 0;
+        transform: scale(0.98);
+    }
+    .navbar-brand{
+        margin: 0;;
+    }
+    .navbar-toggler{
+        position: absolute;
+        right: 10px;
+    }
+    .navbar-toggler:focus{
+        outline: 0;
+    }
+    .small-nav{
+        display: block;
+        position: relative;
+    }
+    .big-nav{
+        display: none;
     }
 }
 
@@ -436,7 +357,7 @@ section{
 
 
   /*Contact-section*/
-.contact-heading{
+  .contact-heading{
     font-weight: 800;
     text-transform: uppercase;
     font-size: 40px;
@@ -532,7 +453,7 @@ section{
 button[type="submit"]{
     background-color: var(--main-color);
     border: 0;
-    padding: 10px 35px;
+    padding: 5px 15px;
     color: #fff;
     transition: all 0.4s ease-in;
     border-radius: 50px;
@@ -547,7 +468,7 @@ button[type="submit"] i{
     font-weight: 900;
 }
 
-/*services-section on small screen*/
+/*contact-section on small screen*/
 @media (max-width: 800px){
     .info{
         padding: 0;

@@ -22,6 +22,7 @@ function checkBox(){
 }
 
 
+
 /*contact-section*/
 labels.forEach(label => {
     label.innerHTML = label.innerText
@@ -29,3 +30,5 @@ labels.forEach(label => {
             .map((letter, idx)=> `<span style='transition-delay: ${idx * 50}ms;'>${letter}</span>`)
             .join('');
 });
+
+

@@ -421,6 +421,7 @@ section{
 .form-item{
     display: block;
     width: 100%;
+    font-family: inherit;
     border: 1px solid #ced4da;
     padding: 0.375rem  0.75rem;
     margin-top: 10px;
@@ -450,6 +451,31 @@ section{
     color: var(--main-color);
     transform:  translateY(-30px);
 }
+ select{
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+  }
+  .select-wrapper {
+    position: relative;
+  }
+
+  .select-wrapper::after {
+    content: "▼";
+    color: #495057;
+    font-size: 1rem;
+    top: 6px;
+    right: 10px;
+    position: absolute;
+  }
 button[type="submit"]{
     background-color: var(--main-color);
     border: 0;

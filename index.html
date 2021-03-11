@@ -244,7 +244,7 @@
                   </div> 
                 </div>
                 <div class="col-lg-8 col-12">
-                  <form action="olajuwonmubarak355@gmail.com" method="post" class="form-container">
+                  <form  method="post" class="form-container">
                     <br>
                     <div class="row">
                       <div class="col-md-6 form-group">
@@ -258,11 +258,13 @@
                     </div>
                     <div class="row">
                       <div class="col-md-6 form-group">
-                        <select name="services" id="services" class="form-item">
-                          <option value="0" disabled hidden selected></option>
-                          <option style="font-weight: 600;">Web Development</option>
-                          <option  style="font-weight: 600;">Graphics Design</option>
-                        </select>
+                        <div class="select-wrapper">
+                          <select name="services" id="services" class="form-item">
+                            <option value="0" disabled hidden selected></option>
+                            <option style="font-weight: 600;">Web Development</option>
+                            <option  style="font-weight: 600;">Graphics Design</option>
+                          </select>
+                        </div>
                         <label for="services">Which Service do you want?</label>
                       </div>
                       <div class="col-md-6 form-group">
@@ -274,8 +276,9 @@
                         <textarea name="textarea" id="textarea" rows="5" class="form-item" required></textarea>
                         <label for="textarea">Let's Talk</label>
                       </div>
-                      <button type="submit" name="submit">Send Message
-                        <i class="fas fa-mail-bulk"></i>
+                      <button type="submit"  name="submit">
+                        Send Message
+                        <i class="fas fa-mail-bulk"></i> 
                       </button>
                     </div>
                   </form>

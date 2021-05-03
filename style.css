@@ -183,6 +183,14 @@ section{
     padding-right: 4px;
     font-size: 25px;
 }
+svg{
+    font-size: 100px;
+    margin-left: -8px;
+    margin-right: -9px;
+}
+.firebase{
+    font-weight: bold;
+}
 /*about-section on small screen*/
 @media (max-width: 800px){
     .about-text{

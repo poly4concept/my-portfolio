@@ -67,8 +67,8 @@
           <!--input content here for large screen-->
           <main class="main2">
             <div id="jumbotron-section" class="jumbotron-selection m-3">
-                <h1 class="jumbotron-heading">Designer and Front-end Developer</h1> 
-                <h2 class="jumbotron-subheading">I design and code beautiful things your users will love</h2> 
+                <h1 class="jumbotron-heading">Front-end Developer</h1> 
+                <h2 class="jumbotron-subheading">I code beautiful things your users will love</h2> 
                 <div class="row">
                   <div class="col-12">
                     <img src="Images/blackavartar.png" loading="lazy" alt="avatar" class="jumbotron-image">
@@ -83,7 +83,7 @@
                 Hi there, I'm Alhazan Mubarak, a frontend Developer doing what I have passion for which is creating unique, responsive, and user friendly web applications.
               </div>
               <div class="about-content">
-                <h3>Web Developer and Designer</h3>
+                <h3>Web Developer</h3>
                 <p class="font-italic">I love simplicity so I try my best to build things to be as simple as possible. I am also very concerned about best practices and prioritize user experience over developer experience.</p>
                 <div class="row">
                   <div class="col-lg-6 col-12">
@@ -98,12 +98,15 @@
                             <i class="fab fa-css3"></i><strong>CSS</strong>
                           </li>
                           <li>
-                            <i class="fab fa-bootstrap"></i><strong>Boostrap</strong>
+                            <i class="fab fa-bootstrap"></i><strong>Bootstrap</strong>
                           </li>
                         </ul>
                       </div>
                       <div class="col-lg-6 col-12">
                         <ul class="technologies-icon">
+                          <li>
+                            <i class="fab fa-uikit"></i><strong>Material UI</strong>
+                          </li>
                           <li>
                             <i class="fab fa-js-square"></i><strong>Javascript</strong>
                           </li>
@@ -153,13 +156,23 @@ style=" fill:#000000;"><g transform="translate(4.988,4.988) scale(0.942,0.942)">
             <!--Projects Section-->
             <section class="projects-section box" id="projects-section">
               <h2 class="projects-heading">My projects</h2>
+              <div onclick="location.href='https://poly4-quiz.netlify.app/';"  class="row project-box" id="project-box">
+                <div class="col-lg-6  col-12">
+                  <img src="Images/Capture.PNG" loading="lazy" alt="Save Nature"  class="projects-image">
+                </div>
+                <div class="col-lg-6 col-12 projects-info">
+                  <h3 class="project-heading">Quiz App</h3>
+                  <p class="project-text">This is a quiz app with questions randomly generated from an API. Built with typescript and material UI</p>
+                  <a href="https://poly4-quiz.netlify.app/" class="projects-link">Read more <i class="fas fa-arrow-right" id="arrow"></i></a>
+                </div>
+              </div>
               <div onclick="location.href='https://hotel-resorte.netlify.app/';" class="row project-box" id="project-box">
                 <div class="col-lg-6 col-12">
                   <img src="Images/hotel-resort.PNG" loading="lazy" alt="project2"  class="projects-image">
                 </div>
                 <div class="col-lg-6 col-12 projects-info">
                   <h3 class="project-heading">Hotel Resort</h3>
-                  <p class="project-text">This is a landing page for an hotel. You can have access to room's information like price, size, capacity and features.It also has filtering options for you to search for a room of your choice without going through all the lists.</p>
+                  <p class="project-text">This is a landing page for an hotel. You can have access to room's information like price, size, capacity and features.It also has filtering options for you to search for a room of your choice without going through all the lists. Built with React</p>
                   <a href="https://hotel-resorte.netlify.app/" class="projects-link">Read more <i class="fas fa-arrow-right" id="arrow"></i></a>
                 </div>
               </div>
@@ -169,7 +182,7 @@ style=" fill:#000000;"><g transform="translate(4.988,4.988) scale(0.942,0.942)">
                 </div>
                 <div class="col-lg-6 col-12 projects-info">
                   <h3 class="project-heading">A todo app</h3>
-                  <p class="project-text">A productivity web app made using react, that enables users to add a task, check and delete it.</p>
+                  <p class="project-text">A productivity web app made using react, that enables users to add a task, check and delete it. Built with React</p>
                   <a href="https://poly4concept.github.io/Event-KeyCodes/" class="projects-link">Read more <i class="fas fa-arrow-right" id="arrow"></i></a>
                 </div>
               </div>
@@ -183,21 +196,11 @@ style=" fill:#000000;"><g transform="translate(4.988,4.988) scale(0.942,0.942)">
                   <a href="https://poly4concept.github.io/App-Landing-Page/" class="projects-link">Read more <i class="fas fa-arrow-right" id="arrow"></i></a>
                 </div>
               </div>
-              <div onclick="location.href='https://poly4concept.github.io/Save-Nature/';"  class="row project-box" id="project-box">
-                <div class="col-lg-6  col-12">
-                  <img src="Images/savenaturecapture.PNG" loading="lazy" alt="Save Nature"  class="projects-image">
-                </div>
-                <div class="col-lg-6 col-12 projects-info">
-                  <h3 class="project-heading">Operation Save Nature</h3>
-                  <p class="project-text">This is a mock up page for a non-profit organisation promoting nature</p>
-                  <a href="https://poly4concept.github.io/Save-Nature/" class="projects-link">Read more <i class="fas fa-arrow-right" id="arrow"></i></a>
-                </div>
-              </div>
             </section>
 
             <!--Services Section-->
             <section class="services-section box" id="services-section">
-              <h2 class="services-heading">What i do</h2>
+              <h2 class="services-heading">What I do</h2>
               <div class="row">
                 <div class="col-lg-4 col-md-6 col-12" id="services-container">
                   <i class="fas fa-code icon-code icon-blue"></i>
@@ -241,8 +244,8 @@ style=" fill:#000000;"><g transform="translate(4.988,4.988) scale(0.942,0.942)">
                 <div class="col-lg-4 col-12 info">
                   <div class="phone info-hover">
                     <i class="fas fa-phone-alt  contact-icon"></i>
-                  <h4 class="icon-head">Call:</h4>
-                  <small class="icon-small">+2349019193284</small>
+                    <h4 class="icon-head">Call:</h4>
+                    <small class="icon-small">+2349019193284</small>
                   </div>
                   <div class="email info-hover">
                     <i class="fas fa-envelope contact-icon"></i>

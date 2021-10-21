@@ -100,18 +100,21 @@
                           <li>
                             <i class="fab fa-bootstrap"></i><strong>Bootstrap</strong>
                           </li>
+                          <li>
+                            <i class="fab fa-uikit"></i><strong>Material UI</strong>
+                          </li>x
                         </ul>
                       </div>
                       <div class="col-lg-6 col-12">
                         <ul class="technologies-icon">
                           <li>
-                            <i class="fab fa-uikit"></i><strong>Material UI</strong>
-                          </li>
-                          <li>
                             <i class="fab fa-js-square"></i><strong>Javascript</strong>
                           </li>
                           <li>
                             <i class="fab fa-react"></i><strong>React</strong>
+                          </li>
+                          <li>
+                            <img width="20px" height="20px" style="margin-right: 5px;" src="Images/redux.png"><strong>Redux Toolkit</strong>
                           </li>
                         </ul>
                       </div>
@@ -138,13 +141,6 @@
                           <li>
                             <i class="fab fa-git-alt"></i><strong>Git</strong>
                           </li>
-                          <li class="firebase">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="50" height="50"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g transform="translate(4.988,4.988) scale(0.942,0.942)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g stroke="#0563bb" stroke-width="10" stroke-linejoin="round"><path d="M28.66667,132.58333l54.5885,-102.35433c1.15025,-2.15717 4.26058,-2.11775 5.3535,0.07167l18.89133,37.78267z" fill="#ff8f00"></path><path d="M28.66667,132.55467l19.87317,-122.54642c0.51958,-3.20708 4.82675,-3.90225 6.33175,-1.02125l38.29508,73.401z" fill="#ffa000"></path><path d="M74.50825,46.62633l17.716,33.95567l-62.81225,51.38858l-0.71667,0.56258z" fill="#ff6f00"></path><path d="M28.66667,132.58333l95.55317,-92.13825c2.00308,-1.93142 5.34633,-0.79192 5.75483,1.96008l13.35867,90.17817l-53.75,31.32908c-2.18225,1.2255 -4.84467,1.2255 -7.02692,0z" fill="#ffc400"></path></g><path d="M0,172v-172h172v172z" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><g stroke="none" stroke-width="1" stroke-linejoin="miter"><path d="M28.66667,132.58333l54.5885,-102.35433c1.15025,-2.15717 4.26058,-2.11775 5.3535,0.07167l18.89133,37.78267z" fill="#ff8f00"></path><path d="M28.66667,132.55467l19.87317,-122.54642c0.51958,-3.20708 4.82675,-3.90225 6.33175,-1.02125l38.29508,73.401z" fill="#ffa000"></path><path d="M28.69533,132.53317l0.71667,-0.56258l62.81225,-51.38858l-17.716,-33.95567z" fill="#ff6f00"></path><path d="M28.66667,132.58333l95.55317,-92.13825c2.00308,-1.93142 5.34633,-0.79192 5.75483,1.96008l13.35867,90.17817l-53.75,31.32908c-2.18225,1.2255 -4.84467,1.2255 -7.02692,0z" fill="#ffc400"></path></g><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path></g></g></svg>
-                            Firebase
-                          </li>
                         </ul>
                       </div>
                     </div>
@@ -156,6 +152,17 @@ style=" fill:#000000;"><g transform="translate(4.988,4.988) scale(0.942,0.942)">
             <!--Projects Section-->
             <section class="projects-section box" id="projects-section">
               <h2 class="projects-heading">My projects</h2>
+              <div onclick="location.href='https://zuri.chat/';" class="row project-box" id="project-box">
+                <div class="col-lg-6 col-12">
+                  <img src="Images/zurichat.png" alt="project3"  class="projects-image">
+                </div>
+                <div class="col-lg-6 col-12 projects-info">
+                  <h3 class="project-heading">Zuri Chat</h3>
+                  <p class="project-text">ZuriChat is an open-source workspace and communication tool with advanced functionalities and additional plugins.</p>
+                  <p class="project-text">I implemented the User Settings page and frontend page of the Goals-plugin</p>
+                  <a href="https://zuri.chat/" class="projects-link">Read more <i class="fas fa-arrow-right" id="arrow"></i></a>
+                </div>
+              </div>
               <div onclick="location.href='https://poly4-quiz.netlify.app/';"  class="row project-box" id="project-box">
                 <div class="col-lg-6  col-12">
                   <img src="Images/Capture.PNG" loading="lazy" alt="Save Nature"  class="projects-image">
@@ -174,16 +181,6 @@ style=" fill:#000000;"><g transform="translate(4.988,4.988) scale(0.942,0.942)">
                   <h3 class="project-heading">Hotel Resort</h3>
                   <p class="project-text">This is a landing page for an hotel. You can have access to room's information like price, size, capacity and features.It also has filtering options for you to search for a room of your choice without going through all the lists. Built with React</p>
                   <a href="https://hotel-resorte.netlify.app/" class="projects-link">Read more <i class="fas fa-arrow-right" id="arrow"></i></a>
-                </div>
-              </div>
-              <div onclick="location.href='https://poly4concept.github.io/todo-app/';" class="row project-box" id="project-box">
-                <div class="col-lg-6 col-12">
-                  <img src="Images/todoapp.PNG" alt="project3"  class="projects-image">
-                </div>
-                <div class="col-lg-6 col-12 projects-info">
-                  <h3 class="project-heading">A todo app</h3>
-                  <p class="project-text">A productivity web app made using react, that enables users to add a task, check and delete it. Built with React</p>
-                  <a href="https://poly4concept.github.io/Event-KeyCodes/" class="projects-link">Read more <i class="fas fa-arrow-right" id="arrow"></i></a>
                 </div>
               </div>
               <div onclick="location.href='https://poly4concept.github.io/App-Landing-Page/';"  class="row project-box" id="project-box">
@@ -310,8 +307,8 @@ style=" fill:#000000;"><g transform="translate(4.988,4.988) scale(0.942,0.942)">
                 </a>
                 <a href="https://facebook.com/alhazan.mubarak" class="facebook" target="-blank">
                   <i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/alhazanmubarak/" class="instagram" target="-blank">
-                  <i class="fab fa-instagram"></i>
+                <a href="https://www.linkedin.com/in/alhazan-mubarak/" class="linkedin" target="-blank">
+                  <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="https://wa.me/2349019193284" class="whatsapp" target="-blank">
                   <i class="fab fa-whatsapp" rel="noopener"></i>
